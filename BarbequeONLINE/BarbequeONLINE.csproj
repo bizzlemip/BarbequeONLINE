@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarbequeONLINE</RootNamespace>
+    <AssemblyName>BarbequeONLINE</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIParticle">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Coffee.UIParticle.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro.Scripts">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\DOTweenPro.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Febucci.TextAnimator.Runtime">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Febucci.TextAnimator.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnityResonance">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\FMODUnityResonance.dll</HintPath>
+    </Reference>
+    <Reference Include="JoelG.ENA4">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\JoelG.ENA4.dll</HintPath>
+    </Reference>
+    <Reference Include="LMirman.RewiredGlyphs">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\LMirman.RewiredGlyphs.dll</HintPath>
+    </Reference>
+    <Reference Include="LMirman.Utilities">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\LMirman.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="LMirman.VespaIO">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\LMirman.VespaIO.dll</HintPath>
+    </Reference>
+    <Reference Include="LMirman.VespaIO.LLAPI">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\LMirman.VespaIO.LLAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PathCreator.Examples">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\PathCreator.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows_Functions">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Rewired_Windows_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.6.1\lib\net462\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Addressables">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.KdTree">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.ProBuilder.KdTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Poly2Tri">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\My project\builds\My project_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>Y:\SteamLibrary\steamapps\common\ENA Dream BBQ\ENA-4-DreamBBQ_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharacterHandler.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="NetcodeHandler.cs" />
+    <Compile Include="UIHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="barbequeonlinecharacters" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

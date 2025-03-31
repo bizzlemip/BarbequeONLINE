@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbequeONLINE", "BarbequeONLINE\BarbequeONLINE.csproj", "{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1AA050A-31A4-4BF1-ACE7-2B142E51C97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEFFD9B-0390-4F40-AB21-DB4E2B8FADB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {165263A4-736C-4622-A72D-53A1204C4772}
+	EndGlobalSection
+EndGlobal
